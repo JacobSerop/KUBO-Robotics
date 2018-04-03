@@ -1,1 +1,54 @@
 
+body{
+margin: 0;
+}
+header{
+width: 100%;
+min-height: 50px;
+display: flex;
+flex-direction: column;
+}
+h1{
+
+}
+h3{
+margin: auto 5px auto 5px;
+color: black;
+text-decoration-color: black;
+}
+a:link, a:visited, a:hover, a:active{
+text-decoration: none;
+color: black;
+}
+a:link{
+text-decoration: none;
+}
+a:visited{
+
+}
+a:hover{
+
+}
+a:active{
+color: blue;
+}
+nav{
+display: flex;
+flex-direction: row;
+}
+.top-header{
+display: flex;
+flex-direction: row;
+}
+.logo-kedu{
+display: block;
+}
+.user-block{
+
+}
+.path-listing{
+background-color: grey;
+}
+h4{
+margin: 5px 5px 5px 10px;
+}
