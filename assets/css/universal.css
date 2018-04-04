@@ -12,7 +12,7 @@ h1{
 
 }
 h3{
-margin: auto 5px auto 5px;
+margin: auto auto auto auto;
 color: black;
 text-decoration-color: black;
 }
@@ -33,22 +33,44 @@ a:active{
 color: blue;
 }
 nav{
+flex-grow: 1;
 display: flex;
 flex-direction: row;
 }
 .top-header{
+padding: 10px;
 display: flex;
 flex-direction: row;
 }
 .logo-kedu{
-display: block;
+flex-grow: 1;
+margin: 0;
 }
 .user-block{
-
+  flex-grow: 1;
+  height: 50px;
+  background-image: url(../images/placeholder-profile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.top-header-block{
+  flex-grow: 2;
 }
 .path-listing{
-background-color: grey;
+border-top: solid black 1px;
+border-bottom: solid black 1px;
+background-color: #F1F1F2;
+}
+.path-listing-shade{
 }
 h4{
 margin: 5px 5px 5px 10px;
+}
+.information-tablet{
+  position: absolute;
+  right: 50px;
+  background-color: #F1F1F2;
+  height: 100%;
+  width: 180px;
 }
