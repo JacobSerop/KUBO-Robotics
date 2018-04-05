@@ -1,0 +1,32 @@
+h5{
+  margin: 0;
+}
+.conf-block1, .conf-block2, .conf-block3{
+  display: flex;
+  flex-grow: 1;
+  margin: 5px 10px 5px 10px;
+  background-color: #F1F1F2;
+}
+.conf-block-seperator{
+  display: flex;
+  flex-grow: 2;
+}
+.search-field{
+  width: 90%;
+}
+.search-logo{
+  height: 25px;
+  width: 25px;
+  background-image: url("../images/magnifying-glass.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.local-button, .global-button, .forum-button{
+  width: 30%;
+  margin: 0 auto 0 auto;
+}
+.faq-button{
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
