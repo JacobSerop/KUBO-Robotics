@@ -81,7 +81,7 @@ flex-direction: row;
   display: flex;
   flex-grow: 6;
   background-color: rgba(255, 0, 0, 0.5);
-  margin: 50px 50px 0 50px;
+  margin: 2% 2% 0 2%;
 }
 .conf-bar{
   display: flex;
@@ -92,10 +92,9 @@ flex-direction: row;
   border-radius: 10px;
 }
 .information-tablet{
-  margin-right: 50px;
+  margin-right: 2%;
   display: flex;
   flex-grow: 1;
-  right: 50px;
   background-color: #F1F1F2;
   height: 100%;
 }
