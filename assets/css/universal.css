@@ -79,7 +79,7 @@ flex-direction: row;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: flex;
-  flex-grow: 20;
+  flex-grow: 6;
   background-color: rgba(255, 0, 0, 0.5);
   margin: 50px 50px 0 50px;
 }
@@ -96,7 +96,6 @@ flex-direction: row;
   right: 50px;
   background-color: #F1F1F2;
   height: 100%;
-  width: 180px;
 }
 footer{
   width: 100%;
