@@ -126,10 +126,9 @@ footer{
 .desk-field{
   display: flex;
   flex-direction: row;
-  width: 98%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
   background-color: inherit;
-  padding: 1%;
 }
 .conf-block{
   display: flex;

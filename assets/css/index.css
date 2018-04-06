@@ -13,3 +13,8 @@
 .info-block:hover{
   background-color: lightblue;
 }
+.local-block{
+  flex-grow: 1;
+  margin: 10px;
+  background-color: white;
+}
