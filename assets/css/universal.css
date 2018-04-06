@@ -96,7 +96,6 @@ h4{
   flex: 6;
   background-color: #F1F1F2;
   margin: 2% 2% 0 2%;
-  border: 1px solid grey;
 }
 .conf-bar{
   justify-content: space-between;
@@ -152,7 +151,7 @@ footer{
   height: 25px;
   width: 27px;
   margin: 0 0 0 0;
-  background-color: grey;
+  background-color: rgba(240, 240, 240, 0.5);
 }
 #search-logo{
   background-image: url("../images/magnifying-glass.png");
