@@ -20,23 +20,24 @@ button{
 .conf-bar{
   justify-content: space-between;
 }
-.conf-block1, .conf-block2, .conf-block3{
+.conf-block{
   display: flex;
   margin: 5px 10px 5px 10px;
   background-color: #F1F1F2;
 }
 .search-field{
-  width: 90%;
+  width: 180px;
 }
-.local-button, .global-button, .forum-button{
+.conf-button{
   align-self: center;
-}
-.faq-button, .chat-button, .local-button, .global-button, .forum-button{
   display: flex;
   flex-direction: row;
   width: auto;
   margin: 0 5px 0 5px;
   height: 25px;
+}
+.conf-button:hover{
+  background-color: lightblue;
 }
 .conf-bar-logo{
   height: 25px;
@@ -51,6 +52,7 @@ button{
   background-repeat: no-repeat;
 }
 .info-block{
+  box-shadow: 3px 5px rgba(150, 150, 150, 1);
   overflow: hidden;
   flex-direction: column;
   display: flex;
@@ -58,6 +60,11 @@ button{
   min-width: 50px;
   max-height: 200px;
   background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.info-block:hover{
+  background-color: lightblue;
 }
 .desk-field{
   width: 100%;
