@@ -15,10 +15,27 @@ h1{
 
 }
 h3{
-  margin: auto auto auto auto;
+  margin: auto 5px auto 5px;
   color: black;
   text-decoration-color: black;
 }
+h5{
+  margin: 0;
+}
+h6{
+  margin: 5px;
+  font-size: 1.5em;
+}
+p{
+  margin: 5px;
+  word-wrap: normal:
+}
+button{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
 a:link, a:visited, a:hover, a:active{
   text-decoration: none;
   color: black;
@@ -36,31 +53,27 @@ a:active{
   color: blue;
 }
 nav{
-  flex-grow: 1;
   display: flex;
   flex-direction: row;
 }
 .top-header{
-  padding: 10px;
+  align-items: center;
+  padding: 10px 1% 10px 1%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .logo-kedu{
-  flex-grow: 1;
-  margin: 0;
 }
 .user-block{
-  flex-grow: 1;
   height: 50px;
   background-image: url(../images/placeholder-profile.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
-.top-header-block{
-  flex-grow: 2;
-}
 .path-listing{
+  padding: 0 2% 0 2%;
   border-top: solid black 1px;
   border-bottom: solid black 1px;
   background-color: #F1F1F2;
@@ -76,19 +89,22 @@ h4{
   flex-direction: row;
 }
 .desktop{
+  flex-direction: column;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: flex;
   flex: 6;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: #F1F1F2;
   margin: 2% 2% 0 2%;
+  border: 1px solid grey;
 }
 .conf-bar{
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 35px;
-  background-color: rgba(0, 250, 0, 0.5);
+  background-color: #216393;
   border-radius: 10px;
 }
 .information-tablet{
@@ -104,4 +120,44 @@ footer{
   height: 10%;
   background-color: #F1F1F2;
   border-top: solid grey 1px;
+}
+
+
+.desk-field{
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  height: 98%;
+  background-color: inherit;
+  padding: 1%;
+}
+.conf-block{
+  display: flex;
+  margin: 5px 10px 5px 10px;
+}
+.search-field{
+  width: 180px;
+}
+.conf-button{
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin: 0 5px 0 5px;
+  height: 25px;
+}
+.conf-button:hover{
+  background-color: lightblue;
+}
+.conf-bar-logo{
+  height: 25px;
+  width: 27px;
+  margin: 0 0 0 0;
+  background-color: grey;
+}
+#search-logo{
+  background-image: url("../images/magnifying-glass.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
