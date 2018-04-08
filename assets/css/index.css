@@ -1,3 +1,190 @@
+
+html{
+  height: 100%;
+}
+body{
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  height: 100%;
+}
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+}
+h2{
+  margin: 20px 50px 2px 30px;
+  font-size: 1.5em;
+}
+h3{
+  margin: 0 5px 0 5px;
+  color: black;
+  text-decoration-color: black;
+  align-self: center;
+}
+.forum-block:hover h3{
+  color: pink;
+}
+h5{
+  color: grey;
+  margin: 0;
+}
+h6{
+  margin: 5px 5px 2px 5px;
+  font-size: 1em;
+}
+.local-info-block1 h6{
+  font-weight: normal;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+p{
+  margin: 5px;
+  word-wrap: normal:
+}
+button{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: black;
+}
+a:link{
+  text-decoration: none;
+}
+a:visited{
+
+}
+h3 a:hover{
+  color: #00a19b;
+}
+a:active{
+  color: blue;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+}
+.top-header{
+  align-items: center;
+  padding: 10px 1% 10px 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo-kedu{
+}
+.user-block{
+  height: 50px;
+  background-image: url(../images/placeholder-profile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.path-listing{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 2% 0 2%;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  background-color: #F1F1F2;
+}
+.path-listing-shade{
+}
+h4{
+  margin: 5px 5px 5px 10px;
+}
+.main-section{
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.desktop{
+  flex-direction: column;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex: 6;
+  background-color: #F1F1F2;
+  margin: 2% 2% 0 2%;
+}
+.conf-bar{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 35px;
+  background-color: #F1F1F2;
+  border-radius: 10px;
+  border-bottom: 1px solid grey;
+}
+.information-tablet{
+  padding-top: 10px;
+  margin-right: 2%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #F1F1F2;
+  height: 100%;
+}
+footer{
+  width: 100%;
+  height: 10%;
+  background-color: #F1F1F2;
+  border-top: solid grey 1px;
+}
+
+
+.desk-field{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+}
+.conf-block{
+  display: flex;
+  margin: 5px 10px 5px 10px;
+}
+.search-field{
+  width: 180px;
+}
+.conf-button{
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin: 0 5px 0 5px;
+  height: 25px;
+}
+.conf-bar-logo{
+  height: 25px;
+  width: 27px;
+  margin: 0 0 0 0;
+  background-color: rgba(240, 240, 240, 0.5);
+}
+#search-logo{
+  background-image: url("../images/magnifying-glass.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+.active-nav{
+  color: pink;
+  text-decoration: underline;
+}
+
+
+
 .info-block{
   overflow: hidden;
   flex-direction: column;
@@ -12,16 +199,16 @@
   border-bottom-right-radius: 10px;
   border: 2px solid lightgrey;
 }
-.info-block p{
+.info-block p, .forum-block-front p{
   color: grey;
 }
-.info-block:hover{
+.info-block:hover .forum-block-front:hover{
   background-color: #F1F1F2;
 }
-.info-block:hover h6{
+.info-block:hover h6, .forum-block-front:hover h6{
   color: #00a19b;
 }
-.info-block:hover p{
+.info-block:hover p, .forum-block-front:hover p{
   color: black;
 }
 .local-block{
@@ -51,7 +238,7 @@ button:hover, button:hover h5{
   color: #00a19b;
 }
 .local-info-block1{
-  border-left: 1px solid grey;
+  border-left: 5px solid #F1F1F2;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -59,10 +246,8 @@ button:hover, button:hover h5{
 .local-info-block{
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex-grow: 3;
 }
-
 
 
 
@@ -72,6 +257,57 @@ button:hover, button:hover h5{
   color: white;
   border-color: black;
 }
-.local-info-block1 h2{
-  font-size: 0.5;
+.forum-block, .forum-block1, .forum-block-front{
+  border-radius: 5px;
+}
+.forum-block, .forum-block1{
+  display: flex;
+  flex-direction: row;
+}
+.forum-block{
+background-color: lightgrey;
+min-height: 50px;
+border: 2px solid white;
+}
+.forum-block1{
+  min-height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.forum-block-front{
+  margin: 10px 10px 0px 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid lightgrey;
+  overflow: hidden;
+}
+.forum-block:hover{
+  background-color: grey;
+}
+.forum-block:hover .forum-title-and-text{
+  border-color: black;
+}
+.forum-block:hover h3{
+  color: red;
+  text-decoration: underline;
+}
+.forum-block1 .forum-votes:hover, .forum-block1 .forum-title-and-text:hover, .forum-block1 .forum-block-tag:hover{
+  background-color: black;
+}
+.forum-block h3{
+  align-self: flex-start;
+}
+.forum-votes{
+  width: 10%;
+}
+.forum-title-and-text{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+.forum-block-tag{
+  width: 10%;
 }

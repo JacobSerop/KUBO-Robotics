@@ -19,9 +19,13 @@ h2{
   font-size: 1.3em;
 }
 h3{
-  margin: auto 5px auto 5px;
+  margin: 0 5px 0 5px;
   color: black;
   text-decoration-color: black;
+  align-self: center;
+}
+.forum-block:hover h3{
+  color: pink;
 }
 h5{
   color: grey;
@@ -32,8 +36,6 @@ h6{
   font-size: 1em;
 }
 .local-info-block1 h6{
-  margin-top: 1px;
-  color: grey;
   font-weight: normal;
   margin-left: 10px;
   margin-top: 0px;
@@ -123,6 +125,7 @@ h4{
   border-bottom: 1px solid grey;
 }
 .information-tablet{
+  padding-top: 10px;
   margin-right: 2%;
   display: flex;
   flex: 1;
