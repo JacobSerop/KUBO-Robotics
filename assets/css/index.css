@@ -1,5 +1,4 @@
 .info-block{
-  box-shadow: 3px 5px rgba(150, 150, 150, 1);
   overflow: hidden;
   flex-direction: column;
   display: flex;
@@ -7,10 +6,23 @@
   min-width: 50px;
   max-height: 200px;
   background-color: white;
-  border: 1px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid lightgrey;
+}
+.info-block p{
+  color: grey;
 }
 .info-block:hover{
-  background-color: lightblue;
+  background-color: #F1F1F2;
+}
+.info-block:hover h6{
+  color: #00a19b;
+}
+.info-block:hover p{
+  color: black;
 }
 .local-block{
   display: flex;
@@ -18,11 +30,13 @@
   margin: 10px;
   background-color: white;
 }
-
+a:active{
+  color: blue;
+}
 button{
   background-color: white;
   color: black;
-  border: 1px solid grey;
+  border: 2px solid grey;
   border-radius: 5px;
 }
 button:default{
@@ -32,17 +46,32 @@ button::after{
   border: none;
 }
 button:hover, button:hover h5{
-    border-color: #00a19b;
-    color: black;
-    color: #00a19b;
+  border-color: #00a19b;
+  background-color: lightgrey;
+  color: #00a19b;
 }
 .local-info-block1{
+  border-left: 1px solid grey;
   display: flex;
-  flex-grow: 3;
-  background-color: rgba(255, 0, 0, 0.5);
-}
-.local-info-block2{
-  display: flex;
+  flex-direction: column;
   flex-grow: 1;
-  background-color: rgba(200, 0, 0, 0.5);
+}
+.local-info-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 3;
+}
+
+
+
+
+
+.active-subsite, .active-subsite h5{
+  background-color: grey;
+  color: white;
+  border-color: black;
+}
+.local-info-block1 h2{
+  font-size: 0.5;
 }
