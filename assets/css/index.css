@@ -24,9 +24,6 @@ h3{
   text-decoration-color: black;
   align-self: center;
 }
-.forum-block:hover h3{
-  color: pink;
-}
 h5{
   color: grey;
   margin: 0;
@@ -106,6 +103,7 @@ h4{
   flex-direction: row;
 }
 .desktop{
+  height: 100%;
   flex-direction: column;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -137,7 +135,6 @@ footer{
   width: 100%;
   height: 10%;
   background-color: #F1F1F2;
-  border-top: solid grey 1px;
 }
 
 
@@ -202,11 +199,14 @@ footer{
 .info-block p, .forum-block-front p{
   color: grey;
 }
-.info-block:hover .forum-block-front:hover{
-  background-color: #F1F1F2;
+.info-block:hover, .forum-block-front:hover{
+  border-color: grey;
 }
 .info-block:hover h6, .forum-block-front:hover h6{
   color: #00a19b;
+}
+.forum-block:hover h6{
+  color: #044C7F
 }
 .info-block:hover p, .forum-block-front:hover p{
   color: black;
@@ -265,7 +265,7 @@ button:hover, button:hover h5{
   flex-direction: row;
 }
 .forum-block{
-background-color: lightgrey;
+background-color: #F1F1F2;
 min-height: 50px;
 border: 2px solid white;
 }
@@ -283,7 +283,7 @@ border: 2px solid white;
   overflow: hidden;
 }
 .forum-block:hover{
-  background-color: grey;
+  background-color: lightgrey;
 }
 .forum-block:hover .forum-title-and-text{
   border-color: black;
@@ -310,4 +310,7 @@ border: 2px solid white;
 }
 .forum-block-tag{
   width: 10%;
+}
+.block-img{
+  width: 100%;
 }
