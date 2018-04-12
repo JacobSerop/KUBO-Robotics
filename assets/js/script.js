@@ -18,13 +18,12 @@ function getLocal() {
   }
 }
 
-function submitNote(text, time, important) {
+function submitNote(text, time) {
   var origNotes = getLocal();
 
   var newNote = {
     text: text,
     dueDate: time,
-    important: important
   };
 
   origNotes.push(newNote);
@@ -45,20 +44,8 @@ function buildList() {
     pElm.innerHTML = noteList[i].text;
     liElm.appendChild(pElm);
 
-
-
     ulElm.appendChild(liElm);
   }
-}
-
-function submitDelEvent(event) {
-  var arrIndex = event.target.getAttribute("data-index");
-  var notes = getLocal();
-
-  notes.splice(arrIndex, 1);
-
-  setLocal(notes);
-  buildList();
 }
 
 function submitNoteEvent(event) {
@@ -68,18 +55,11 @@ function submitNoteEvent(event) {
 
   submitNote(noteText.value, noteTime.value);
   buildList();
-  modal.style.display = "none";
 }
 
 window.onload = function() {
   buildList();
 }
-
-var showModalBtn = document.querySelector("#showModal");
-
-showModalBtn.addEventListener('click', function(event) {
-  modal.style.display = "block";
-});
 
 var submitNoteBtn = document.querySelector("#addNote");
 

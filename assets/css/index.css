@@ -1,4 +1,7 @@
 
+input{
+  border-radius: 5px;
+}
 html{
   height: 100%;
 }
