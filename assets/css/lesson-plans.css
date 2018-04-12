@@ -19,10 +19,6 @@
   height: 100vh;
 }
 
-.flex.column {
-  flex-direction: column;
-}
-
 .flex.row {
   flex-direction: row;
 }
@@ -31,10 +27,20 @@
 fylde henholdsvis flex:1 = 1/3  flex: 2 = 2/3*/
 
 ul {
+  align-content: flex-end;
   position: absolute;
   flex: 1;
 }
-
+li{
+  right: 0;
+  text-decoration: none;
+  list-style: none;
+  background-color: white;
+  padding: 1px;
+  margin: 2px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
 .modal-bg {
   position: fixed;
   top: 0;
