@@ -8,21 +8,36 @@
   height: 100%;
   background-color: rgba(200, 200, 200, 0.2)
 }
+.support{
+  display: flex;
+  align-self: flex-start;
+  width: 200px;;
+  background-color: white;
+  padding: 2px;
+  border-radius: 10px;
+  border: 1px solid #044C7F;
 
+}
 ul {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   flex: 1;
   margin: 0;
 }
 
 li{
-  right: 0;
+  align-items: flex-end;
+  align-self: flex-end;
+  width: auto;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   list-style: none;
   background-color: white;
   padding: 1px;
   margin: 2px;
-  border: 1px solid grey;
+  border: 1px solid #00A19B;
   border-radius: 10px;
 }
 
@@ -31,7 +46,6 @@ li{
 }
 
 .modal {
-  align-items: center;
   display: flex;
   flex-direction: row;
   bottom: 0;

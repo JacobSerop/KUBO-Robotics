@@ -333,3 +333,82 @@ button:hover, button:hover h5{
 .block-img{
   width: 100%;
 }
+
+
+
+/* NOTE: the java stuffs */
+
+
+#showModal {
+}
+
+.chatBlock, .local-info-block, .local-info-block1{
+  margin: 10px 10px 0 10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3)
+}
+.support{
+  display: flex;
+  align-self: flex-start;
+  width: 200px;;
+  background-color: white;
+  padding: 2px;
+  border-radius: 10px;
+  border: 1px solid #044C7F;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex: 1;
+  margin: 0;
+}
+
+li{
+  align-items: flex-end;
+  align-self: flex-end;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  background-color: white;
+  padding: 1px;
+  margin: 2px;
+  border: 1px solid #00A19B;
+  border-radius: 10px;
+}
+
+.modal-bg {
+  bottom: 0;
+}
+
+.modal {
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  padding: 10px;
+}
+
+.modal button{
+  height: 34px;
+  width: auto;
+}
+
+.modal button h5{
+  display: flex;
+  flex-grow: 1
+}
+
+.modal input{
+  display: flex;
+  flex-grow: 10;
+  border-radius: 10px;
+  height: 30px;
+}
+
+#addNote{
+  display: flex;
+  flex-grow: 1;
+}
