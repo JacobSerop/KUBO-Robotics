@@ -412,3 +412,9 @@ li{
   display: flex;
   flex-grow: 1;
 }
+
+.example-box{
+  display: flex;
+  background-color: white;
+  margin: 5px;
+}
