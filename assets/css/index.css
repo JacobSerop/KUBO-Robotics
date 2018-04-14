@@ -315,15 +315,37 @@ button:hover, button:hover h5{
   background-color: black;
 }
 .forum-block h3{
+  min-height: 100px;
   align-self: flex-start;
 }
 .forum-votes{
-  width: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+}
+.forum-votes-sub1, .forum-votes-sub2, .forum-votes-sub3{
+  display: flex;
+  flex-grow: 1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.forum-votes-sub1{
+  background-image: url(../images/heart.png);
+}
+.forum-votes-sub2{
+  background-image: url(../images/arrows.png);
+}
+.forum-votes-sub3{
+  background-image: url(../images/share.png);
+}
+.forum-votes-sub1:hover, .forum-votes-sub2:hover, .forum-votes-sub3:hover{
+  background-color: #F1F1F1;
 }
 .forum-title-and-text{
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  width: 80%;
   border-left: 1px solid grey;
   border-right: 1px solid grey;
 }
