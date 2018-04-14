@@ -49,8 +49,7 @@ h6{
 .active-bread{
   color: black;
 }
-.local-info-block1 h6{
-  font-weight: normal;
+.info-block,  h6{
   margin-left: 10px;
   margin-top: 0px;
 }
@@ -94,8 +93,8 @@ nav{
 .logo-kedu{
 }
 .user-block{
-  height: 50px;
-  width: 100px;
+  height: 60px;
+  width: 120px;
   background-image: url(../images/placeholder-profile.png);
   background-position: center;
   background-size: contain;
@@ -142,6 +141,7 @@ nav{
   padding-top: 10px;
   margin-right: 2%;
   display: flex;
+  min-width: 200px;
   flex: 1;
   flex-direction: column;
   background-color: #F1F1F2;
@@ -195,14 +195,18 @@ footer{
   text-decoration: underline;
 }
 
+.info-block img{
+  align-self: center;
+  width: 150px;
+  height: 150px;
+}
 
-
-.info-block{
+.info-block, .forum-block-front{
   overflow: hidden;
   flex-direction: column;
   display: flex;
   margin: 10px 10px 0 10px;
-  min-width: 50px;
+  min-width: 100px;
   max-height: 200px;
   background-color: white;
   border-top-left-radius: 10px;
@@ -228,6 +232,7 @@ footer{
 }
 .local-block{
   display: flex;
+  flex-direction: row;
   flex-grow: 1;
   margin: 10px;
 }
@@ -280,12 +285,15 @@ button:hover, button:hover h5{
   color: white;
   border-color: black;
 }
-.forum-block, .forum-block1{
+.forum-block, .forum-block-open{
   display: flex;
   flex-direction: row;
-  border-radius: 5px;
+}
+.forum-block-open{
+  border-bottom: 1px solid black;
 }
 .forum-block{
+  border-radius: 5px;
   overflow: hidden;
   background-color: #F1F1F2;
   max-height: 100px;
@@ -296,15 +304,10 @@ button:hover, button:hover h5{
   margin-left: 2px;
   margin-right: 2px;
 }
-.forum-block-front{
-  margin: 10px 10px 0px 10px;
-  background-color: white;
+
+.flex-wrap{
   display: flex;
-  flex-direction: column;
-  border: 2px solid lightgrey;
-  overflow: hidden;
-  border-radius: 10px;
-  max-height: 150px;
+  flex-direction: row;
 }
 .forum-block:hover{
   background-color: lightgrey;
@@ -354,7 +357,12 @@ button:hover, button:hover h5{
   width: 10%;
 }
 .block-img{
-  width: 100%;
+  width: 100px;
+  height: 100px;
+}
+.info-sub-block{
+  display: flex;
+  flex-direction: row;
 }
 
 
