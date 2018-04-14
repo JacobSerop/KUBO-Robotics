@@ -250,8 +250,8 @@ button h5{
 button:default{
   border: none;
 }
-button::after{
-  border: none;
+button:active{
+  width: -5px;
 }
 button:hover, button:hover h5{
   border-color: #00a19b;
@@ -287,17 +287,29 @@ button:hover, button:hover h5{
 }
 .forum-block, .forum-block-open{
   display: flex;
-  flex-direction: row;
 }
 .forum-block-open{
+  background-color: rgba(255, 255, 255, 0.5);
+  flex-direction: column;
   border-bottom: 1px solid black;
 }
+.forum-block-open h2{
+  margin: 5px 0 10px 20px;
+  color: #216393;
+}
+.forum-block-open p{
+  margin-left: 5px;
+  margin-right: 5px;
+}
 .forum-block{
+  flex-direction: row;
   border-radius: 5px;
   overflow: hidden;
   background-color: #F1F1F2;
   max-height: 100px;
   border: 2px solid white;
+  margin: 5px 5px 0 5px;
+  padding: 4px;
 }
 .forum-block1{
   min-height: 20px;
@@ -311,9 +323,7 @@ button:hover, button:hover h5{
 }
 .forum-block:hover{
   background-color: lightgrey;
-}
-.forum-block:hover .forum-title-and-text{
-  border-color: black;
+  border-color: #00A19B;
 }
 .forum-block1 .forum-votes:hover, .forum-block1 .forum-title-and-text:hover, .forum-block1 .forum-block-tag:hover{
   background-color: black;
@@ -325,7 +335,11 @@ button:hover, button:hover h5{
 .forum-votes{
   display: flex;
   flex-direction: column;
-  width: 40px;
+  width: 100px;
+}
+.width1{
+  width: 200px;
+  height: 20px;
 }
 .forum-votes-sub1, .forum-votes-sub2, .forum-votes-sub3{
   display: flex;
@@ -334,13 +348,20 @@ button:hover, button:hover h5{
   background-size: contain;
   background-repeat: no-repeat;
 }
-.forum-votes-sub1{
+.forum-votes-sub4, .forum-votes-sub5, .forum-votes-sub6{
+  height: 100%;
+  flex-grow: 1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.forum-votes-sub1, .forum-votes-sub4{
   background-image: url(../images/heart.png);
 }
-.forum-votes-sub2{
+.forum-votes-sub2, .forum-votes-sub5{
   background-image: url(../images/arrows.png);
 }
-.forum-votes-sub3{
+.forum-votes-sub3, .forum-votes-sub6{
   background-image: url(../images/share.png);
 }
 .forum-votes-sub1:hover, .forum-votes-sub2:hover, .forum-votes-sub3:hover{
@@ -349,12 +370,10 @@ button:hover, button:hover h5{
 .forum-title-and-text{
   display: flex;
   flex-direction: column;
-  width: 80%;
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
+  width: auto;
 }
 .forum-block-tag{
-  width: 10%;
+  width: 50px;
 }
 .block-img{
   width: 100px;
