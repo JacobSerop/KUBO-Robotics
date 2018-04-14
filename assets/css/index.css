@@ -95,6 +95,7 @@ nav{
 }
 .user-block{
   height: 50px;
+  width: 100px;
   background-image: url(../images/placeholder-profile.png);
   background-position: center;
   background-size: contain;
