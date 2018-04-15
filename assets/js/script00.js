@@ -3,11 +3,11 @@ var modal = document.querySelector(".modal-bg");
 function setLocal(localNotes) {
   var jsonData = JSON.stringify(localNotes);
 
-  localStorage.setItem("comment0", jsonData);
+  localStorage.setItem("comment00", jsonData);
 }
 
 function getLocal() {
-  var notes = localStorage.getItem("comment0");
+  var notes = localStorage.getItem("comment00");
 
   if(notes == null)
   {
