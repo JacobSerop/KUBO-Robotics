@@ -463,10 +463,32 @@ li{
   flex-grow: 1;
 }
 
-.example-box{
+.exaple-head{
+  width: 100%;
+  height: 40px;
+  background: lightgrey;
+  margin: 10%;
+}
+.examples-field{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#F1F1F2, #216393);
+}
+.examples{
+  display: flex;
+  flex-direction: column;
+}
+.width2{
+  width: 200px;
+}
+
+.example-box1{
   display: flex;
   background-color: white;
-  margin: 5px;
+  margin: 10px;
 }
 
 /* NOTE: hej jeg er jakop */
