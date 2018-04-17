@@ -496,7 +496,8 @@ li{
 }
 
 #postText {
-height: 500px;
+height: 350px;
+width: 750px;
 }
 
 #addPost {
